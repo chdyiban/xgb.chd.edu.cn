@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <title>长安大学学生工作部</title>
+
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./public/css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <script>
+  (function(w){if(!("WebSocket"in w&&2===w.WebSocket.CLOSING)){var d=document.createElement("div");d.className="browsehappy";d.innerHTML='<div style="width:100%;height:100px;font-size:20px;line-height:100px;text-align:center;background-color:#E90D24;color:#fff;margin-bottom:40px;">\u4f60\u7684\u6d4f\u89c8\u5668\u5b9e\u5728<strong>\u592a\u592a\u65e7\u4e86</strong>\uff0c\u592a\u592a\u65e7\u4e86 <a target="_blank" href="http://browsehappy.osfipin.com/" style="background-color:#31b0d5;border-color: #269abc;text-decoration: none;padding: 6px 12px;background-image: none;border: 1px solid transparent;border-radius: 4px;color:#FFEB3B;">\u7acb\u5373\u5347\u7ea7</a></div>';var f=function(){var s=document.getElementsByTagName("body")[0];if("undefined"==typeof(s)){setTimeout(f,10)}else{s.insertBefore(d,s.firstChild)}};f()}}(window));
+  </script>
+</head>
+<body>
+ 
+<!-- 你的HTML代码 -->
+<header id="headertest" class="layui-header xc-header"style="height:auto">
+	<div class="layui-container layui-row" style="">
+		<div class="layui-col-md8">
+			<a class="logo" href="/" style="">
+        	    <img src="./public/images/logo.png" height="120px;"/>
+        	</a>
+        </div>
+        <div class="layui-col-md4 layui-col-space20">
+        	<div class="top">
+        		<span class="layui-breadcrumb" lay-separator="|">
+				  <a href="">校园门户</a>
+				  <a href="">院系投稿</a>
+				  <a href="">管理面板</a>
+				  <a href="">ENGLISH</a>
+				</span>
+        	</div>
+			<div id="sb-search" class="sb-search bar7">
+				<form>
+					<input type="text" placeholder="">
+					<button type="submit"><i class="layui-icon" style="font-size: 24px; color: #1E9FFF;">&#xe615;</i>   </button>
+				</form>
+        	</div>
+        </div>
+        
+	</div>
+	<div class="layui-row" style="background-color: #1e9fff;"> 
+		<div class="layui-container">
+			<ul class="layui-nav layui-bg-blue" lay-filter="">
+			  <li class="layui-nav-item layui-this"><a href="">首页</a></li>
+			  <li class="layui-nav-item">
+			    <a href="javascript:;">部门简介</a>
+			    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+			      <dd><a href="">部门职能</a></dd>
+			      <dd><a href="">部门领导</a></dd>
+			      <dd><a href="">工作分工</a></dd>
+			    </dl>
+			  </li>
+			  <li class="layui-nav-item">
+			    <a href="javascript:;">规章制度</a>
+			    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+			      <dd><a href="">上级文件</a></dd>
+			      <dd><a href="">学工文件</a></dd>
+			    </dl>
+			  </li>
+			  <li class="layui-nav-item">
+			    <a href="javascript:;">教育管理</a>
+			    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+			      <dd><a href="">主题教育</a></dd>
+			      <dd><a href="">新生教育</a></dd>
+			      <dd><a href="">毕业生教育</a></dd>
+			      <dd><a href="">榜样教育</a></dd>
+			      <dd><a href="">违纪处分</a></dd>
+			    </dl>
+			  </li>
+			  <li class="layui-nav-item"><a href="">队伍建设</a></li>
+			  <li class="layui-nav-item">
+			    <a href="javascript:;">民族团结教育</a>
+			    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+			      <dd><a href="">民族生风采</a></dd>
+			      <dd><a href="">民族生工作</a></dd>
+			    </dl>
+			  </li>
+			  <li class="layui-nav-item"><a href="">资助服务</a></li>
+			  <li class="layui-nav-item"><a href="">心理咨询</a></li>
+			  <li class="layui-nav-item"><a href="">武警国防生</a></li>
+			  <li class="layui-nav-item">
+			    <a href="javascript:;">下载中心</a>
+			    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+			      <dd><a href="">教育管理</a></dd>
+			      <dd><a href="">辅导员队伍建设</a></dd>
+			      <dd><a href="">民族学生教育</a></dd>
+			      <dd><a href="">资助教育</a></dd>
+			      <dd><a href="">心理健康教育</a></dd>
+			    </dl>
+			  </li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="layui-container">
+    <div class="xc-section">
+        <div class="layui-row">
+            <img src="./temp/img/banner2.png" height="200px" width="100%" alt="">
+        </div>
+    </div>
+	<div class="xc-section" style="margin-top:25px">
+		<div class="layui-row layui-col-space10">
+			<div class="layui-col-md4">
+				<div class="layui-carousel" id="index-photo">
+				  <div carousel-item>
+				    <a style="background-image:url('./temp/img/1.jpg');" href="#" target="_blank">
+                		<h3 class="banner-title">北京大学杨爱民教授为我校全体学生工作干部作培训报告</h3>
+        			</a>
+        			<a style="background-image:url('./temp/img/2.jpg');" href="#" target="_blank">
+                		<h3 class="banner-title">长安大学代表队在第三届全国＂互联网+＂大学生创新创业大赛中获银奖</h3>
+        			</a>
+        			<a style="background-image:url('./temp/img/3.jpg');" href="#" target="_blank">
+                		<h3 class="banner-title">我校健美操队在第十三届全国学生运动会上再创佳绩</h3>
+        			</a>
+        			<a style="background-image:url('./temp/img/4.jpg');" href="#" target="_blank">
+                		<h3 class="banner-title">2017年大学生义务兵役贡献奖颁奖暨应征入伍欢送仪式举行</h3>
+        			</a>
+        			<a style="background-image:url('./temp/img/5.jpg');" href="#" target="_blank">
+                		<h3 class="banner-title">2017级本科生军训总结汇报暨表彰大会举行</h3>
+        			</a>
+				  </div>
+				</div>
+			</div>
+			<div class="layui-col-md5">
+				<h1 class="site-vip-title layui-word-aux" style="position:relative"><span>学工要闻</span>
+                    <a class="xc-link-more" href="#"><i class="layui-icon">&#xe65b;</i></a>
+                </h1>
+                <ul class="xc-news-list">
+                	<li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                关于组织申报陕西普通高校辅导员工作室的通知
+                            </a>
+                            <span>[2017-09-25]</span></h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                关于举办辅导员沙龙第八期的通知
+                            </a>
+                            <span>[2017-09-25]</span></h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                关于举办辅导员沙龙第八期的通知
+                            </a>
+                            <span>[2017-09-25]</span></h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                关于举办辅导员沙龙第八期的通知
+                            </a>
+                            <span>[2017-09-25]</span></h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                关于举办辅导员沙龙第八期的通知
+                            </a>
+                            <span>[2017-09-25]</span></h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                关于举办辅导员沙龙第八期的通知
+                            </a>
+                            <span>[2017-09-25]</span></h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                关于举办辅导员沙龙第八期的通知
+                            </a>
+                            <span>[2017-09-25]</span></h3>
+                    </li>
+                </ul>
+			</div>
+			<div class="layui-col-md3">
+				<h1 class="site-notice-title layui-word-aux" style="position:relative"><span>通知公告</span>
+                    <a class="xc-link-more" href="#"><i class="layui-icon">&#xe65b;</i></a>
+                </h1>
+                <ul class="layui-timeline" style="margin-top:13px;">
+				  <li class="layui-timeline-item">
+				    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+				    <div class="layui-timeline-content layui-text">
+				      <h3 class="layui-timeline-title">10月22日</h3>
+				      <p>
+				        关于进一步加强本科生学风建设的通知
+				      </p>
+				    </div>
+				  </li>
+				  <li class="layui-timeline-item">
+				    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+				    <div class="layui-timeline-content layui-text">
+				      <h3 class="layui-timeline-title">9月10日</h3>
+				      <p>
+				        关于进一步加强本科生学风建设的通知
+				      </p>
+				    </div>
+				  </li>
+				  <li class="layui-timeline-item">
+				    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+				    <div class="layui-timeline-content layui-text">
+				      <h3 class="layui-timeline-title">8月16日</h3>
+				      <p>关于举办辅导员沙龙第八期的通知</p>
+				      <p>关于XXX的通知</p>
+				    </div>
+				  </li>
+				  <li class="layui-timeline-item">
+				    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+				    <div class="layui-timeline-content layui-text">
+				      <div class="layui-timeline-title">更多</div>
+				    </div>
+				  </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="xc-section">
+		<div class="layui-row layui-col-space10">
+			<div class="layui-col-md4">
+				<h1 class="site-big-title layui-word-aux" style="position:relative"><span>院系动态</span>
+                    <a class="xc-link-more" href="#"><i class="layui-icon">&#xe65b;</i></a>
+                </h1>
+                <ul class="xc-news-list">
+                	<li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                汽车学院举办XX主题教育活动
+                            </a>
+                            <span>[2017-07-26]</span>
+                        </h3>
+                    </li>
+                    
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                经管学院举办新生教育工程活动举行
+                            </a>
+                            <span>[2017-07-26]</span>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                新生教育工程系列讲座顺利举行
+                            </a>
+                            <span>[2017-07-26]</span>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                安全隐患专项检查工作结束
+                            </a>
+                            <span>[2017-07-26]</span>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                纪委办监察处党支部召开会议学习讨论党的
+                            </a>
+                            <span>[2017-07-26]</span>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                校团委召开学习《习近平的七年知青岁月
+                            </a>
+                            <span>[2017-07-26]</span>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                西安鼓乐专场音乐会在我校举办
+                            </a>
+                            <span>[2017-07-26]</span>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                新疆籍少数民族学生民族团结教育专题报告
+                            </a>
+                            <span>[2017-07-26]</span>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3 class="">
+                            <a class="layui-inline layui-elip xc-link" href="#" target="_blank">
+                                我校参赛项目在2017中国“云上贵州”创新大赛项目中获奖
+                            </a>
+                            <span>[2017-07-26]</span>
+                        </h3>
+                    </li>
+                    
+
+                    
+                </ul>
+			</div>
+			<div class="layui-col-md8">
+				<h1 class="site-big-title layui-word-aux" style="position:relative">
+					<span>主题教育</span>
+                </h1>
+                <div class="layui-row">
+                    <div class="layui-carousel" id="special-edu">
+                      <div carousel-item>
+                        <img src="./temp/img/zt1.jpg"/>
+                        <img src="./temp/img/zt2.jpg"/>
+                      </div>
+                    </div>
+                </div>
+                <div class="layui-row">
+                    <fieldset class="layui-elem-field site-link-button">
+                        <legend>快速导航</legend>
+                        <div class="layui-row layui-col-space10" style="margin: 0px 10px 10px;">
+                            <div class="layui-col-md3">
+                                <a href="#" class="layui-btn layui-btn-big">学工系统</a>
+                            </div>
+                            <div class="layui-col-md3">
+                                <a href="#" class="layui-btn layui-btn-big layui-btn-normal">易班中心</a>
+                            </div>
+                            <div class="layui-col-md3">
+                                <a href="#" class="layui-btn layui-btn-big layui-btn-warn">档案管理</a>
+                            </div>
+                            <div class="layui-col-md3">
+                                <a href="#" class="layui-btn layui-btn-big layui-btn-danger">一站服务</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+			</div>
+		</div>
+	</div>
+	<div class="xc-section">
+        <h1 class="site-big-title layui-word-aux"><span>获得荣誉 </span>
+            <a class="xc-link-more" href="#">更多<i class="layui-icon">&#xe65b;</i></a>
+        </h1>
+        <div id="xc-swiper-honor" class="swiper-container xc-swiper-container">
+            <div class="swiper-wrapper" style="transition-timing-function:linear;-moz-transition-timing-function:linear;-webkit-transition-timing-function:linear;-o-transition-timing-function:linear;">
+            	<div class="swiper-slide">
+                    <div class="xc-firends-box">
+                        <img class="" alt="海马汽车" style="" src="http://static.hzxcsy.com.cn/public/upload/cooperator/logo-haima.png" data-holder-rendered="true">
+                        <a class="xc-pos-abs txtcenter xc-firends-text" href="http://www.haima.com/" target="_blank">辅导员职业能力大赛二等奖</a>
+                    </div> 
+                </div>
+                    
+                <div class="swiper-slide">
+                    <div class="xc-firends-box">
+                        <img class="" alt="北汽幻速" style="" src="http://static.hzxcsy.com.cn/public/upload/cooperator/logo-beiqihuansu.png" data-holder-rendered="true">
+                        <a class="xc-pos-abs txtcenter xc-firends-text" href="http://www.baic-hs.com/" target="_blank">陕西省最佳辅导员</a>
+                    </div> 
+                </div>
+                    
+                <div class="swiper-slide">
+                    <div class="xc-firends-box">
+                        <img class="" alt="长安铃木" style="" src="http://static.hzxcsy.com.cn/public/upload/cooperator/logo-changanlingmu.png" data-holder-rendered="true">
+                        <a class="xc-pos-abs txtcenter xc-firends-text" href="http://m.changansuzuki.com/" target="_blank">长安大学最佳辅导员</a>
+                    </div> 
+                </div>
+                    
+                <div class="swiper-slide">
+                    <div class="xc-firends-box">
+                        <img class="" alt="东风汽车" style="" src="http://static.hzxcsy.com.cn/public/upload/cooperator/logo-dongfeng.png" data-holder-rendered="true">
+                        <a class="xc-pos-abs txtcenter xc-firends-text" href="http://www.dfl.com.cn/" target="_blank">网络文化优秀奖</a>
+                    </div> 
+                </div>
+            </div>
+		</div>
+    </div>
+</div>
+
+<footer class="">
+	<div class="layui-container">
+		<div class="layui-row layui-show-md-block layui-hide-sm">
+            <div class="layui-col-md4 layui-col-sm6">
+                    <h3 class="xc-item-title">长安大学学生工作部</h3>
+                    
+                    <p>电话 : 029-83135157 82334147</p>
+                    <p>邮箱 : xsgzb@chd.edu.cn</p>
+                    <p>邮编 : 710064</p>
+                    <p>地址 : 西安市南二环中段长安大学学生工作部</p>
+                    
+            </div>
+            <div class="layui-col-md4 layui-col-sm6">
+                    <h3 class="xc-item-title">相关链接</h3>
+                    
+                    <a class="xc-link" href="http://www.moe.edu.cn/" target="_blank">教育部</a>
+                    <a class="xc-link" href="http://www.snedu.gov.cn/" target="_blank">陕西省教育厅</a>
+                    <a class="xc-link" href="http://www.moe.edu.cn/s78/A12/" target="_blank">教育部思政司</a>
+                    <a class="xc-link" href="https://www.sinoss.net/" target="_blank">社科网</a>
+                    <a class="xc-link" href="http://www.wenming.cn/" target="_blank">文明网</a>
+                    <a class="xc-link" href="http://www.gxfdy.edu.cn/" target="_blank">高校辅导员</a>
+                    <a class="xc-link" href="http://www.univs.cn/" target="_blank">中国大学生在线</a>
+                    <a class="xc-link" href="http://www.nssd.org/" target="_blank">国家哲学社会科学学术期刊数据库</a>
+                    <a class="xc-link" href="http://www.chd.edu.cn" target="_blank">长安大学</a>
+                    <a class="xc-link" href="http://www.jwc.chd.edu.cn" target="_blank">教务处</a>
+                    <a class="xc-link" href="http://jyzx.chd.edu.cn" target="_blank">就业处</a>
+                    <a class="xc-link" href="http://xfjy.chd.edu.cn" target="_blank">团委</a>
+                    
+            </div> 
+            <div class="layui-col-md4">
+                <h2 class="txtright">
+                    
+                    <div class="layui-inline">
+                            <img src="./public/images/qrcode-yiban.png" width="129" height="129">
+                            <p class="txtcenter">长安大学·易班</p>
+                    </div>
+                    <div class="layui-inline">
+                            <img src="./public/images/qrcode-xszx.jpeg" width="129" height="129">
+                            <p class="txtcenter">长安大学学生在线</p>
+                    </div>
+                       
+                </h2>
+                
+            </div>
+        </div>
+        <div class="layui-row txtcenter">
+            <p>Copyright © 2017 长安大学学生工作部 All Rights Reserved.</p>
+            <p><a href="http://www.miitbeian.gov.cn" target="_blank">陕ICP备ICP05001168号</a> 技术支持:<a href="">长安大学易班工作站</a></p>
+            
+        </div>
+	</div>
+</footer>
+ 
+<script src="./layui/layui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+<script>
+//一般直接写在一个js文件中
+layui.use(['layer', 'element','carousel'], function(){
+  var layer = layui.layer;
+  var element = layui.element;
+  var carousel = layui.carousel;
+  carousel.render({
+    elem: '#index-photo'
+    ,width: '100%' //设置容器宽度
+    ,arrow: 'hover' //始终显示箭头
+    ,indicator: 'outside'
+    //,anim: 'updown' //切换动画方式
+  });
+  carousel.render({
+    elem: '#special-edu'
+    ,width: '100%' //设置容器宽度
+    ,height:'160px'
+    ,arrow: 'none' //始终显示箭头
+    ,indicator: 'none'
+    ,anim: 'fade' //切换动画方式
+  });
+});
+
+var swiperOption = {
+  direction: 'horizontal',
+  loop: true,
+  autoplay:1,
+  speed:5000,
+  slidesPerView : 4,
+  spaceBetween : 10,
+  autoplayDisableOnInteraction : false,
+};
+new Swiper ('#xc-swiper-honor', swiperOption);
+</script> 
+</body>
+</html>
