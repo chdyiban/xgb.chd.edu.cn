@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="./layui/css/layui.css">
   <link rel="stylesheet" href="./public/css/global.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link href="https://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min.css" rel="stylesheet">
   <script>
   (function(w){if(!("WebSocket"in w&&2===w.WebSocket.CLOSING)){var d=document.createElement("div");d.className="browsehappy";d.innerHTML='<div style="width:100%;height:100px;font-size:20px;line-height:100px;text-align:center;background-color:#E90D24;color:#fff;margin-bottom:40px;">\u4f60\u7684\u6d4f\u89c8\u5668\u5b9e\u5728<strong>\u592a\u592a\u65e7\u4e86</strong>\uff0c\u592a\u592a\u65e7\u4e86 <a target="_blank" href="http://browsehappy.osfipin.com/" style="background-color:#31b0d5;border-color: #269abc;text-decoration: none;padding: 6px 12px;background-image: none;border: 1px solid transparent;border-radius: 4px;color:#FFEB3B;">\u7acb\u5373\u5347\u7ea7</a></div>';var f=function(){var s=document.getElementsByTagName("body")[0];if("undefined"==typeof(s)){setTimeout(f,10)}else{s.insertBefore(d,s.firstChild)}};f()}}(window));
   </script>
@@ -19,12 +19,12 @@
 <!-- 你的HTML代码 -->
 <header id="headertest" class="layui-header xc-header"style="height:auto">
 	<div class="layui-container layui-row" style="">
-		<div class="layui-col-md6">
+		<div class="layui-col-md6 layui-col-xs4">
 			<a class="logo" href="/" style="">
         	    <img src="./public/images/logo.png" height="120px;"/>
         	</a>
         </div>
-        <div class="layui-col-md6 layui-col-space20">
+        <div class="layui-col-md6 layui-col-xs8 layui-col-space20">
         	<div class="top">
         		<span class="layui-breadcrumb" lay-separator="|">
 				  <a href="">校园门户</a>
@@ -69,6 +69,7 @@
 			      <dd><a href="">毕业生教育</a></dd>
 			      <dd><a href="">榜样教育</a></dd>
 			      <dd><a href="">违纪处分</a></dd>
+                  <dd><a href="">工科试验班</a></dd>
 			    </dl>
 			  </li>
               <li class="layui-nav-item">
@@ -356,37 +357,62 @@
         <h1 class="site-big-title layui-word-aux"><span>获得荣誉 </span>
             <a class="xc-link-more" href="#">更多<i class="layui-icon">&#xe65b;</i></a>
         </h1>
-        <div id="xc-swiper-honor" class="swiper-container xc-swiper-container">
-            <div class="swiper-wrapper" style="transition-timing-function:linear;-moz-transition-timing-function:linear;-webkit-transition-timing-function:linear;-o-transition-timing-function:linear;">
-            	<div class="swiper-slide">
-                    <div class="xc-firends-box">
-                        <img class="" alt="海马汽车" style="" src="http://static.hzxcsy.com.cn/public/upload/cooperator/logo-haima.png" data-holder-rendered="true">
-                        <a class="xc-pos-abs txtcenter xc-firends-text" href="http://www.haima.com/" target="_blank">辅导员职业能力大赛二等奖</a>
-                    </div> 
-                </div>
-                    
-                <div class="swiper-slide">
-                    <div class="xc-firends-box">
-                        <img class="" alt="北汽幻速" style="" src="http://static.hzxcsy.com.cn/public/upload/cooperator/logo-beiqihuansu.png" data-holder-rendered="true">
-                        <a class="xc-pos-abs txtcenter xc-firends-text" href="http://www.baic-hs.com/" target="_blank">陕西省最佳辅导员</a>
-                    </div> 
-                </div>
-                    
-                <div class="swiper-slide">
-                    <div class="xc-firends-box">
-                        <img class="" alt="长安铃木" style="" src="http://static.hzxcsy.com.cn/public/upload/cooperator/logo-changanlingmu.png" data-holder-rendered="true">
-                        <a class="xc-pos-abs txtcenter xc-firends-text" href="http://m.changansuzuki.com/" target="_blank">长安大学最佳辅导员</a>
-                    </div> 
-                </div>
-                    
-                <div class="swiper-slide">
-                    <div class="xc-firends-box">
-                        <img class="" alt="东风汽车" style="" src="http://static.hzxcsy.com.cn/public/upload/cooperator/logo-dongfeng.png" data-holder-rendered="true">
-                        <a class="xc-pos-abs txtcenter xc-firends-text" href="http://www.dfl.com.cn/" target="_blank">网络文化优秀奖</a>
-                    </div> 
-                </div>
-            </div>
+        <div id="honorbox" class="swiper-container xc-swiper-container">
+            <table cellspacing="0" cellpadding="3" align="center" border="0"> 
+         <tbody>
+          <tr> 
+           <td id="sliderhonor" valign="top"> 
+            <table width="800" height="100" border="0" cellpadding="0" cellspacing="0"> 
+             <tbody>
+              <tr> 
+                <td width="200" align="center">
+                    <a href="#"><img width="200" height="120" src="./temp/img/1.jpg"></a><br/>
+                    <a href="#">某某大赛获奖</a>
+                </td>
+                <td width="200" align="center">
+                    <a href="#"><img width="200" height="120" src="./temp/img/2.jpg"></a><br/>
+                    <a href="#">某某大赛获奖</a>
+                </td>
+                <td width="200" align="center">
+                    <a href="#"><img width="200" height="120" src="./temp/img/3.jpg"></a><br/>
+                    <a href="#">某某大赛获奖</a>
+                </td>
+                <td width="200" align="center">
+                    <a href="#"><img width="200" height="120" src="./temp/img/4.jpg"></a><br/>
+                    <a href="#">某某大赛获奖</a>
+                </td>
+                <td width="200" align="center">
+                    <a href="#"><img width="200" height="120" src="./temp/img/5.jpg"></a><br/>
+                    <a href="#">某某大赛获奖</a>
+                </td>
+                <td width="200" align="center">
+                    <a href="#"><img width="200" height="120" src="./temp/img/2.jpg"></a><br/>
+                    <a href="#">为什么会走到尽头</a>
+                </td>
+              </tr> 
+             </tbody>
+            </table> 
+            </td> 
+            <td id="sliderhonorhide" valign="top"></td>  
+          </tr> 
+         </tbody>
+        </table> 
 		</div>
+        <script type="text/javascript">
+        var speed=30;
+        sliderhonorhide.innerHTML=sliderhonor.innerHTML;
+        function Marquee(){
+            if(honorbox.scrollLeft>=sliderhonor.scrollWidth){
+                honorbox.scrollLeft=0;
+            }
+            else{
+                honorbox.scrollLeft++;
+            }
+        }
+        var slide=setInterval(Marquee,speed);
+        honorbox.onmouseover=function(){clearInterval(slide);}
+        honorbox.onmouseout=function(){slide=setInterval(Marquee,speed);}
+        </script>
     </div>
 </div>
 
@@ -435,6 +461,7 @@
                 
             </div>
         </div>
+        <hr>
         <div class="layui-row txtcenter">
             <p>Copyright © 2017 长安大学学生工作部 All Rights Reserved.</p>
             <p><a href="http://www.miitbeian.gov.cn" target="_blank">陕ICP备ICP05001168号</a> 技术支持:<a href="">长安大学易班工作站</a></p>
@@ -444,7 +471,6 @@
 </footer>
  
 <script src="./layui/layui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 <script>
 //一般直接写在一个js文件中
 layui.use(['layer', 'element','carousel'], function(){
@@ -467,17 +493,6 @@ layui.use(['layer', 'element','carousel'], function(){
     ,anim: 'fade' //切换动画方式
   });
 });
-
-var swiperOption = {
-  direction: 'horizontal',
-  loop: true,
-  autoplay:1,
-  speed:5000,
-  slidesPerView : 4,
-  spaceBetween : 10,
-  autoplayDisableOnInteraction : false,
-};
-new Swiper ('#xc-swiper-honor', swiperOption);
 </script> 
 </body>
 </html>

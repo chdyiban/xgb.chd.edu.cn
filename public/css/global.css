@@ -158,13 +158,16 @@
   text-align:center;font-size:18px;margin:15px 0
 }
 
+/*#2e3033*/ 
 footer {
 	padding: 40px 0 20px 0;
-    background: #2e3033;
-    clear: both;
-    position: relative;
-    font-size: 14px;
-    line-height: 26px;
+  background: url('../images/background-bottom.jpeg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  clear: both;
+  position: relative;
+  font-size: 14px;
+  line-height: 26px;
 }
 footer *{
 	color: #ccc;
@@ -262,7 +265,7 @@ footer .xc-link:hover{
 
 .txtcenter {
 	padding-top:20px;
-	border-top: 1px solid #45484c;
+/*	border-top: 1px solid #45484c;*/
     text-align: center !important;
 }
 
@@ -305,3 +308,6 @@ footer .xc-link:hover{
 			right: 36px;
 		}
 
+#honorbox img{
+  padding:10px 10px 2px 10px;
+}
