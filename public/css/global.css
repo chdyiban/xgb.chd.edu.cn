@@ -49,6 +49,84 @@
   padding-left: 5px;
 }
 
+.banner{
+  background: url('../images/list-banner.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 222px;
+  overflow: hidden;
+}
+.menucard{
+  padding: 30px;
+  margin-top: 50px;
+  color: #fff;
+  background: #034470;
+  opacity: 0.84;
+}
+
+.menucard .title h1{
+  font-size: 30px;
+}
+.menucard .title h1 span{
+  border-bottom: 3px solid #fff;
+  padding-right: 16px;
+  padding-bottom: 12px;
+}
+.menucard .menu {
+  width: 100%;
+  overflow: hidden;
+}
+.menucard ul,li{
+  display: inline;
+  list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menucard a{
+  color: #fff;
+  margin-right: 5px;
+}
+
+.navbar{
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.navbar li a{
+    color: #333;
+    font-size: 14px;
+    display: block;
+    height: 100%;
+    padding: 15px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.navbar .active{
+    background: #1e76b2;
+    margin-left: 0px;
+    padding: 15px;
+    color: #fff;
+}
+
+.article-list li{
+    display: block;
+    padding: 7px;
+    background: url(http://www.gov.cn/govweb/xhtml/zhuanti/19dahuiyi/images/fangkuai.jpg) 0 15px no-repeat;
+}
+
+.article-list li a{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.article-list li span{
+  float: right;
+  color: #ccc;
+  margin-right: 5px;
+}
+
 .xc-link{
   cursor: pointer;
   display: inline-block;
@@ -83,6 +161,7 @@
 }
 
 .xc-notice-list li{
+  display: block;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 17px;
   margin-top: 17px;
@@ -311,3 +390,46 @@ footer .xc-link:hover{
 #honorbox img{
   padding:10px 10px 2px 10px;
 }
+
+.content-banner{
+    width: 100%;
+    background-color: #eee;
+    padding: 30px 0px;
+}
+.content-title{
+  font-size: 28px;
+    color: #004f8e;
+    display: inline-block;
+    margin-right: 15px;
+}
+.content{
+  padding: 25px 0px;
+      text-align: left;
+    line-height: 18px;
+}
+.content .author{
+color: #999;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.content .author span{
+  margin:0 5px;
+}
+.content .article{
+    margin: auto;
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 3px 0 0 0;
+    color: #333;
+    text-align: justify;
+    text-justify: inter-ideograph;/*IE*/
+}
+/*.content .article p{
+  display: inline-block;
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  line-height: 30px;
+}*/
